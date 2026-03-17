@@ -23,4 +23,4 @@ jobs:
         run: |
           echo "## 🤖 AI Response" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.ai-response.outputs.response }}" >> $GITHUB_STEP_SUMMARY
+          echo "{% raw %}${{ steps.ai-response.outputs.response }}{% endraw %}" >> $GITHUB_STEP_SUMMARY
