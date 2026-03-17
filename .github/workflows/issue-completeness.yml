@@ -29,8 +29,8 @@ jobs:
 
             Sign off as AI assistant.
           prompt: |
-            New issue was opened by {% raw %}${{ github.event.issue.user.login }}{% endraw %}
-            Title: {% raw %}${{ github.event.issue.title }}{% endraw %}
+            New issue was opened by ${{ github.event.issue.user.login }}
+            Title: ${{ github.event.issue.title }}
             Body:
             ---
             {% raw %}${{ github.event.issue.body }}{% endraw %}
